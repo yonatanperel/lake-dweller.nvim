@@ -1,4 +1,4 @@
-return function(t, _p, _config)
+return function(t, _config)
     return {
         DiagnosticError = { fg = t.error },
         DiagnosticWarn = { fg = t.warn },

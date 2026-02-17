@@ -1,4 +1,4 @@
-return function(t, p, config)
+return function(t, config)
     local italic = config.italics or false
     return {
         -- Git commit
@@ -58,9 +58,9 @@ return function(t, p, config)
         CmpItemKindTypeParameter = { fg = t.type },
         CmpItemKindModule = { fg = t.type },
         CmpItemKindNamespace = { fg = t.type },
-        CmpItemKindVariable = { fg = t.variable },
-        CmpItemKindProperty = { fg = t.variable },
-        CmpItemKindField = { fg = t.variable },
+        CmpItemKindVariable = { fg = t.fg },
+        CmpItemKindProperty = { fg = t.fg },
+        CmpItemKindField = { fg = t.fg },
         CmpItemKindConstant = { fg = t.constant },
         CmpItemKindEnum = { fg = t.constant },
         CmpItemKindEnumMember = { fg = t.constant },
@@ -125,7 +125,7 @@ return function(t, p, config)
         FzfLuaPath = { fg = t.type, bg = t.bg },
         FzfLuaHeaderBind = { fg = t.keyword, bg = t.bg },
         FzfLuaHeaderText = { fg = t.keyword, bg = t.bg },
-        FzfLuaCursor = { fg = p.dark_navy, bg = t.fg },
+        FzfLuaCursor = { fg = t.fg_inverse, bg = t.fg },
         FzfLuaCursorLine = { fg = t.fg, bg = t.selection },
         FzfLuaCursorLineNr = { fg = t.fg_dim, bg = t.selection },
         FzfLuaMatch = { fg = t.keyword, bg = t.bg, bold = true },
@@ -150,7 +150,7 @@ return function(t, p, config)
         WhichKeyTitle = { fg = t.fg, bg = t.bg, bold = true },
 
         -- nvim-notify
-        NotifyBackground = { bg = p.dark_navy },
+        NotifyBackground = { bg = t.fg_inverse },
 
         -- Snacks.nvim
         SnacksPickerNormal = { fg = t.fg, bg = t.bg },
@@ -229,7 +229,7 @@ return function(t, p, config)
         NoiceCmdlinePopupTitle = { fg = t.fg, bg = t.bg, bold = true },
         NoiceConfirm = { fg = t.fg, bg = t.bg },
         NoiceConfirmBorder = { fg = t.fg, bg = t.bg },
-        NoiceCursor = { fg = p.dark_navy, bg = t.fg },
+        NoiceCursor = { fg = t.fg_inverse, bg = t.fg },
         NoiceFormatConfirm = { fg = t.keyword },
         NoiceFormatConfirmDefault = { fg = t.func, bold = true },
         NoiceFormatDate = { fg = t.keyword, italic = italic },

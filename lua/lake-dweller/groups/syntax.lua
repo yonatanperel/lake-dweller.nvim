@@ -1,4 +1,4 @@
-return function(t, p, config)
+return function(t, config)
     local italic = config.italics or false
     local comment_style = { fg = t.comment, italic = italic }
 
@@ -10,14 +10,14 @@ return function(t, p, config)
         Number = { fg = t.constant },
         Boolean = { fg = t.constant },
         Float = { fg = t.constant },
-        Identifier = { fg = t.variable },
+        Identifier = { fg = t.fg },
         Function = { fg = t.func },
         Keyword = { fg = t.keyword },
         Statement = { fg = t.keyword },
         Conditional = { fg = t.keyword },
         Repeat = { fg = t.keyword },
         Label = { fg = t.keyword },
-        Operator = { fg = t.operator },
+        Operator = { fg = t.fg },
         Exception = { fg = t.keyword },
         PreProc = { fg = t.keyword },
         Include = { fg = t.keyword },
@@ -44,7 +44,7 @@ return function(t, p, config)
         ["@keyword.return"] = { fg = t.keyword },
         ["@conditional"] = { fg = t.keyword },
         ["@repeat"] = { fg = t.keyword },
-        ["@operator"] = { fg = t.operator },
+        ["@operator"] = { fg = t.fg },
 
         -- Functions
         ["@function"] = { fg = t.func },
@@ -55,11 +55,11 @@ return function(t, p, config)
         ["@function.builtin"] = { fg = t.func },
 
         -- Variables
-        ["@variable"] = { fg = t.variable },
-        ["@variable.parameter"] = { fg = t.variable },
-        ["@variable.member"] = { fg = t.variable },
-        ["@field"] = { fg = t.variable },
-        ["@property"] = { fg = t.variable },
+        ["@variable"] = { fg = t.fg },
+        ["@variable.parameter"] = { fg = t.fg },
+        ["@variable.member"] = { fg = t.fg },
+        ["@field"] = { fg = t.fg },
+        ["@property"] = { fg = t.fg },
 
         -- Types
         ["@type"] = { fg = t.type },
@@ -67,8 +67,8 @@ return function(t, p, config)
         ["@namespace"] = { fg = t.type },
 
         -- Modules
-        ["@namespace.import"] = { fg = t.variable },
-        ["@module"] = { fg = t.variable },
+        ["@namespace.import"] = { fg = t.fg },
+        ["@module"] = { fg = t.fg },
 
         -- Strings
         ["@string"] = { fg = t.string },
@@ -126,7 +126,7 @@ return function(t, p, config)
         ["@lsp.type.macro.rust"] = { link = "@function.macro" },
         ["@lsp.type.lifetime.rust"] = { link = "@label" },
         ["@lsp.type.builtinType.rust"] = { link = "@type.builtin" },
-        ["@lsp.type.selfKeyword.rust"] = { link = "@variable" },
+        ["@lsp.type.selfKeyword.rust"] = { link = "@keyword" },
         ["@lsp.type.selfTypeKeyword.rust"] = { link = "@type" },
         ["@lsp.type.derive.rust"] = { link = "@attribute" },
         ["@lsp.type.decorator.rust"] = { link = "@attribute" },
@@ -140,7 +140,7 @@ return function(t, p, config)
         ["@keyword.operator"] = { fg = t.keyword },
         ["@type.definition"] = { fg = t.type },
         ["@tag"] = { fg = t.keyword },
-        ["@tag.attribute"] = { fg = t.variable },
+        ["@tag.attribute"] = { fg = t.fg },
         ["@tag.delimiter"] = { fg = t.fg },
         ["@lsp.type.type.typescript"] = { link = "@type" },
         ["@lsp.type.type.typescriptreact"] = { link = "@type" },
@@ -148,16 +148,16 @@ return function(t, p, config)
         ["@lsp.type.interface.typescriptreact"] = { link = "@type" },
         ["@lsp.typemod.variable.readonly.typescript"] = { link = "@variable" },
         ["@lsp.typemod.variable.readonly.typescriptreact"] = { link = "@variable" },
-        typescriptIdentifier = { fg = t.constant },
+        typescriptIdentifier = { fg = t.keyword },
         typescriptHeadersMethod = { fg = t.func },
-        typescriptProp = { fg = t.variable },
+        typescriptProp = { fg = t.fg },
         ["@lsp.type.member.typescript"] = { fg = t.func },
         ["@lsp.type.member.typescriptreact"] = { fg = t.func },
         ["@lsp.typemod.member.defaultLibrary.typescript"] = { fg = t.func },
         ["@lsp.typemod.member.defaultLibrary.typescriptreact"] = { fg = t.func },
 
         -- Python
-        ["@variable.builtin"] = { fg = t.constant },
+        ["@variable.builtin"] = { fg = t.keyword },
         ["@keyword.exception"] = { fg = t.keyword },
         ["@string.documentation"] = comment_style,
         ["@lsp.type.class.python"] = { link = "@type" },
@@ -176,7 +176,7 @@ return function(t, p, config)
         ["@keyword.directive"] = { fg = t.keyword },
         ["@keyword.directive.define"] = { fg = t.keyword },
         ["@string.special.path"] = { fg = t.string },
-        ["@variable.member.cpp"] = { fg = t.variable },
+        ["@variable.member.cpp"] = { fg = t.fg },
         ["@lsp.type.macro.c"] = { link = "@constant.macro" },
         ["@lsp.type.macro.cpp"] = { link = "@constant.macro" },
         ["@lsp.type.typeParameter.cpp"] = { link = "@type" },

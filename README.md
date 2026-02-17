@@ -45,6 +45,7 @@
 
 ```lua
 require("lake-dweller").setup({
+    variant = "lake-dweller",  -- "lake-dweller", "ocean-dweller", "swamp-dweller"
     transparent = false,       -- enable transparent background
     italics = true,            -- enable italic text
     float_background = false,  -- distinct background for floating windows
@@ -105,7 +106,7 @@ Only use distinct colors for specific, common elements—so you can tell at a gl
 1. Functions
 2. Types
 3. Keywords
-4. Constant values—numbers, booleans, strings, nulls, etc.
+4. Constant values—numbers, booleans, strings, nulls, etc. Strings can use slightly different shades for clarity.
 5. Comments
 
 ### Keywords don't need your attention

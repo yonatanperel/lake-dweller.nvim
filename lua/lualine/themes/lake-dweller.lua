@@ -1,35 +1,35 @@
-local C = require("lake-dweller.palette")
-local brighter_bg = "#1a1a24"
+local config = require("lake-dweller").config
+local t = require("lake-dweller.theme")(config)
 
 return {
     normal = {
-        a = { fg = C.muted_slate, bg = C.night_purple, gui = "bold" },
-        b = { fg = C.muted_slate, bg = brighter_bg },
-        c = { fg = C.light_grey, bg = C.night_purple },
+        a = { fg = t.keyword, bg = t.float_bg, gui = "bold" },
+        b = { fg = t.keyword, bg = t.bg_alt },
+        c = { fg = t.fg, bg = t.float_bg },
     },
     insert = {
-        a = { fg = C.soft_green, bg = C.night_purple, gui = "bold" },
-        b = { fg = C.muted_slate, bg = brighter_bg },
-        c = { fg = C.light_grey, bg = C.night_purple },
+        a = { fg = t.added, bg = t.float_bg, gui = "bold" },
+        b = { fg = t.keyword, bg = t.bg_alt },
+        c = { fg = t.fg, bg = t.float_bg },
     },
     visual = {
-        a = { fg = C.rosy_pink, bg = C.night_purple, gui = "bold" },
-        b = { fg = C.muted_slate, bg = brighter_bg },
-        c = { fg = C.light_grey, bg = C.night_purple },
+        a = { fg = t.string, bg = t.float_bg, gui = "bold" },
+        b = { fg = t.keyword, bg = t.bg_alt },
+        c = { fg = t.fg, bg = t.float_bg },
     },
     replace = {
-        a = { fg = C.bright_red, bg = C.night_purple, gui = "bold" },
-        b = { fg = C.muted_slate, bg = brighter_bg },
-        c = { fg = C.light_grey, bg = C.night_purple },
+        a = { fg = t.error, bg = t.float_bg, gui = "bold" },
+        b = { fg = t.keyword, bg = t.bg_alt },
+        c = { fg = t.fg, bg = t.float_bg },
     },
     command = {
-        a = { fg = C.sand_yellow, bg = C.night_purple, gui = "bold" },
-        b = { fg = C.muted_slate, bg = brighter_bg },
-        c = { fg = C.light_grey, bg = C.night_purple },
+        a = { fg = t.warn, bg = t.float_bg, gui = "bold" },
+        b = { fg = t.keyword, bg = t.bg_alt },
+        c = { fg = t.fg, bg = t.float_bg },
     },
     inactive = {
-        a = { fg = C.steel_grey, bg = C.night_purple },
-        b = { fg = C.steel_grey, bg = C.dark_navy },
-        c = { fg = C.steel_grey, bg = C.dark_navy },
+        a = { fg = t.fg_dim, bg = t.float_bg },
+        b = { fg = t.fg_dim, bg = t.fg_inverse },
+        c = { fg = t.fg_dim, bg = t.fg_inverse },
     },
 }

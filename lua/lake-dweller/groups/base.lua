@@ -1,6 +1,9 @@
-return function(t, p, _config)
+return function(t, _config)
     return {
         Normal = { fg = t.fg, bg = t.bg },
+        Cursor = { fg = t.fg_inverse, bg = t.func },
+        lCursor = { fg = t.fg_inverse, bg = t.func },
+        CursorIM = { fg = t.fg_inverse, bg = t.func },
         NormalNC = { fg = t.fg, bg = t.bg },
         NormalFloat = { fg = t.fg, bg = t.float_bg },
         FloatBorder = { fg = t.fg, bg = t.bg },
@@ -13,11 +16,11 @@ return function(t, p, _config)
 
         Visual = { fg = t.fg, bg = t.selection },
         Search = { fg = t.fg, bg = t.search, bold = true },
-        IncSearch = { fg = p.dark_navy, bg = t.search_inc, bold = true },
-        CurSearch = { fg = p.dark_navy, bg = t.search_current, bold = true },
+        IncSearch = { fg = t.fg_inverse, bg = t.search_inc, bold = true },
+        CurSearch = { fg = t.fg_inverse, bg = t.search_current, bold = true },
 
         MatchParen = { fg = t.error, underline = true },
-        QuickFixLine = { fg = p.dark_navy, bg = t.warn },
+        QuickFixLine = { fg = t.fg_inverse, bg = t.warn },
 
         Pmenu = { fg = t.fg, bg = t.float_bg },
         PmenuSel = { fg = t.fg, bg = t.selection },

@@ -1,0 +1,65 @@
+[metadata]
+name = "Beach Dweller"
+origin_url = "https://github.com/yonatan-perel/lake-dweller.nvim"
+
+[colors]
+foreground = "#202020"
+background = "#f8f0d8"
+
+cursor_bg = "#2060a0"
+cursor_fg = "#f8f0d8"
+cursor_border = "#2060a0"
+
+selection_bg = "#d0c8a0"
+selection_fg = "#202020"
+
+scrollbar_thumb = "#707060"
+split = "#707060"
+
+ansi = [
+  "#202020",  # 0 black
+  "#b03030",  # 1 red
+  "#207040",  # 2 green
+  "#906010",  # 3 yellow
+  "#2060a0",  # 4 blue
+  "#a03060",  # 5 magenta
+  "#106060",  # 6 cyan
+  "#f8f0d8",  # 7 white
+]
+
+brights = [
+  "#707060",  # 8 bright black
+  "#b03030",  # 9 bright red
+  "#207040",  # 10 bright green
+  "#906010",  # 11 bright yellow
+  "#2060a0",  # 12 bright blue
+  "#a03060",  # 13 bright magenta
+  "#206060",  # 14 bright cyan
+  "#f8f0d8",  # 15 bright white
+]
+
+[colors.tab_bar]
+background = "#e8dcc0"
+
+[colors.tab_bar.active_tab]
+bg_color = "#f0e8c8"
+fg_color = "#202020"
+intensity = "Bold"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#e8dcc0"
+fg_color = "#707060"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#e8dcc0"
+fg_color = "#202020"
+italic = true
+
+[colors.tab_bar.new_tab]
+bg_color = "#e8dcc0"
+fg_color = "#707060"
+
+[colors.tab_bar.new_tab_hover]
+bg_color = "#e8dcc0"
+fg_color = "#202020"
+italic = true
