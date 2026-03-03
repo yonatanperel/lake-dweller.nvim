@@ -95,7 +95,7 @@ require("lualine").setup({
 
 | Color | Hex | Usage |
 |-------|-----|-------|
-| ![#101510](https://placehold.co/15x15/101510/101510.png) Dark Green | `#101510` | Background |
+| ![#222a22](https://placehold.co/15x15/222a22/222a22.png) Dark Green | `#222a22` | Background |
 | ![#e0e8d8](https://placehold.co/15x15/e0e8d8/e0e8d8.png) Off-White | `#e0e8d8` | Base text |
 | ![#90c890](https://placehold.co/15x15/90c890/90c890.png) Moss Green | `#90c890` | Comments |
 | ![#909888](https://placehold.co/15x15/909888/909888.png) Taupe | `#909888` | Keywords |
@@ -103,7 +103,6 @@ require("lualine").setup({
 | ![#60c090](https://placehold.co/15x15/60c090/60c090.png) Sage Green | `#60c090` | Types |
 | ![#e8a070](https://placehold.co/15x15/e8a070/e8a070.png) Tan | `#e8a070` | Strings |
 | ![#f08080](https://placehold.co/15x15/f08080/f08080.png) Dusty Red | `#f08080` | Constants, errors |
-
 
 ## Supported Plugins
 
