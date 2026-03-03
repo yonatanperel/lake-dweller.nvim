@@ -1,11 +1,5 @@
 return function(config)
-    local variant = config.variant or "lake-dweller"
-    local ok, t = pcall(require, "lake-dweller.variants." .. variant)
-    if not ok then
-        t = require("lake-dweller.variants.lake-dweller")
-    end
-
-    t = vim.tbl_deep_extend("force", {}, t)
+    local t = vim.tbl_deep_extend("force", {}, require("lake-dweller.variants.lake-dweller"))
 
     if config.transparent then
         t.bg = "NONE"

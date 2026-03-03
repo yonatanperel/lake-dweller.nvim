@@ -1,5 +1,6 @@
 use std::collections::HashMap;
 
+// This is what a comment looks like
 #[derive(Debug, Clone)]
 pub struct Config {
     pub name: String,
@@ -25,8 +26,8 @@ impl Config {
 }
 
 enum ConfigError {
-    InvalidName,
-    ConnectionFailed,
+    InvalidName, // Name is not valid
+    ConnectionFailed, // Connection Failed
 }
 
 fn process_items(items: Vec<Config>) -> HashMap<String, bool> {

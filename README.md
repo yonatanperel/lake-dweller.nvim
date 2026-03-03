@@ -4,9 +4,16 @@
 
 <table>
   <tr>
-    <td align="center"><img src="assets/lake-dweller.png" width="100%"><br><sub>Lake Dweller</sub></td>
-    <td align="center"><img src="assets/ocean-dweller.png" width="100%"><br><sub>Ocean Dweller</sub></td>
-    <td align="center"><img src="assets/swamp-dweller.png" width="100%"><br><sub>Swamp Dweller</sub></td>
+    <td align="center"><img src="assets/go.png" width="100%"><br><sub>Go</sub></td>
+    <td align="center"><img src="assets/rust.png" width="100%"><br><sub>Rust</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/typescript.png" width="100%"><br><sub>TypeScript</sub></td>
+    <td align="center"><img src="assets/python.png" width="100%"><br><sub>Python</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/cpp.png" width="100%"><br><sub>C++</sub></td>
+    <td align="center"><img src="assets/sql.png" width="100%"><br><sub>SQL</sub></td>
   </tr>
 </table>
 
@@ -38,7 +45,6 @@
 
 ```lua
 require("lake-dweller").setup({
-    variant = "lake-dweller",  -- "lake-dweller", "ocean-dweller", "swamp-dweller"
     transparent = false,       -- enable transparent background
     italics = true,            -- enable italic text
     float_background = false,  -- distinct background for floating windows
@@ -49,7 +55,7 @@ require("lake-dweller").setup({
 
 Additional theme files for other applications are in the `extras/` directory:
 
-- **WezTerm**: `extras/wezterm/lake-dweller.toml`, `ocean-dweller.toml`, `swamp-dweller.toml`
+- **WezTerm**: `extras/wezterm/lake-dweller.toml`
 
 ### Lualine
 
@@ -61,9 +67,7 @@ require("lualine").setup({
 })
 ```
 
-## Color Palettes
-
-### Lake Dweller
+## Color Palette
 
 | Color | Hex | Usage |
 |-------|-----|-------|
@@ -75,32 +79,6 @@ require("lualine").setup({
 | ![#70a8a8](https://placehold.co/15x15/70a8a8/70a8a8.png) Muted Cyan | `#70a8a8` | Types |
 | ![#d58ca6](https://placehold.co/15x15/d58ca6/d58ca6.png) Rosy Pink | `#d58ca6` | Strings |
 | ![#ef8a90](https://placehold.co/15x15/ef8a90/ef8a90.png) Bright Red | `#ef8a90` | Constants, errors |
-
-### Ocean Dweller
-
-| Color | Hex | Usage |
-|-------|-----|-------|
-| ![#0a1520](https://placehold.co/15x15/0a1520/0a1520.png) Deep Ocean | `#0a1520` | Background |
-| ![#f0f4f8](https://placehold.co/15x15/f0f4f8/f0f4f8.png) Bright White | `#f0f4f8` | Base text |
-| ![#60d8b0](https://placehold.co/15x15/60d8b0/60d8b0.png) Cyan-Green | `#60d8b0` | Comments |
-| ![#90a0c0](https://placehold.co/15x15/90a0c0/90a0c0.png) Periwinkle | `#90a0c0` | Keywords |
-| ![#90c8ff](https://placehold.co/15x15/90c8ff/90c8ff.png) Sky Blue | `#90c8ff` | Functions |
-| ![#40e0d0](https://placehold.co/15x15/40e0d0/40e0d0.png) Turquoise | `#40e0d0` | Types |
-| ![#ff90c0](https://placehold.co/15x15/ff90c0/ff90c0.png) Hot Pink | `#ff90c0` | Strings |
-| ![#ff9090](https://placehold.co/15x15/ff9090/ff9090.png) Coral Red | `#ff9090` | Constants, errors |
-
-### Swamp Dweller
-
-| Color | Hex | Usage |
-|-------|-----|-------|
-| ![#222a22](https://placehold.co/15x15/222a22/222a22.png) Dark Green | `#222a22` | Background |
-| ![#e0e8d8](https://placehold.co/15x15/e0e8d8/e0e8d8.png) Off-White | `#e0e8d8` | Base text |
-| ![#90c890](https://placehold.co/15x15/90c890/90c890.png) Moss Green | `#90c890` | Comments |
-| ![#909888](https://placehold.co/15x15/909888/909888.png) Taupe | `#909888` | Keywords |
-| ![#e0d080](https://placehold.co/15x15/e0d080/e0d080.png) Golden Yellow | `#e0d080` | Functions |
-| ![#60c090](https://placehold.co/15x15/60c090/60c090.png) Sage Green | `#60c090` | Types |
-| ![#e8a070](https://placehold.co/15x15/e8a070/e8a070.png) Tan | `#e8a070` | Strings |
-| ![#f08080](https://placehold.co/15x15/f08080/f08080.png) Dusty Red | `#f08080` | Constants, errors |
 
 ## Supported Plugins
 

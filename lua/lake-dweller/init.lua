@@ -1,7 +1,6 @@
 local M = {}
 
 M.config = {
-    variant = "lake-dweller",
     transparent = false,
     italics = true,
     float_background = false,
