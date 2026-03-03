@@ -6,8 +6,6 @@
   <tr>
     <td align="center"><img src="assets/lake-dweller.png" width="100%"><br><sub>Lake Dweller</sub></td>
     <td align="center"><img src="assets/ocean-dweller.png" width="100%"><br><sub>Ocean Dweller</sub></td>
-  </tr>
-  <tr>
     <td align="center"><img src="assets/swamp-dweller.png" width="100%"><br><sub>Swamp Dweller</sub></td>
   </tr>
 </table>
