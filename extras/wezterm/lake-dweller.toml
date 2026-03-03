@@ -13,8 +13,8 @@ cursor_border = "#d8d8d8"  # light_grey
 selection_bg = "#33415c"  # dusk_blue (matches editor selection)
 selection_fg = "#d8d8d8"  # light_grey
 
-scrollbar_thumb = "#5a6475"  # steel_grey
-split = "#5a6475"  # steel_grey
+scrollbar_thumb = "#707c8c"  # steel_grey
+split = "#707c8c"  # steel_grey
 
 ansi = [
   "#0e0e16",  # 0 black (dark_navy)
@@ -28,7 +28,7 @@ ansi = [
 ]
 
 brights = [
-  "#5a6475",  # 8 bright black (steel_grey)
+  "#707c8c",  # 8 bright black (steel_grey)
   "#ef8a90",  # 9 bright red (bright_red)
   "#8ac490",  # 10 bright green (soft_green)
   "#d1b77a",  # 11 bright yellow (sand_yellow)
@@ -48,7 +48,7 @@ intensity = "Bold"
 
 [colors.tab_bar.inactive_tab]
 bg_color = "#1a1a26"  # night_purple
-fg_color = "#5a6475"  # steel_grey
+fg_color = "#707c8c"  # steel_grey
 
 [colors.tab_bar.inactive_tab_hover]
 bg_color = "#1a1a26"  # night_purple
@@ -57,7 +57,7 @@ italic = true
 
 [colors.tab_bar.new_tab]
 bg_color = "#1a1a26"  # night_purple
-fg_color = "#5a6475"  # steel_grey
+fg_color = "#707c8c"  # steel_grey
 
 [colors.tab_bar.new_tab_hover]
 bg_color = "#1a1a26"  # night_purple

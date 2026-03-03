@@ -1,15 +1,15 @@
 return {
     -- UI
-    bg = "#101510",
+    bg = "#222a22",
     fg = "#e0e8d8",
-    fg_dim = "#708068",
-    fg_inverse = "#101510",
-    bg_alt = "#1a241a",
-    selection = "#304030",
-    search = "#304030",
+    fg_dim = "#889880",
+    fg_inverse = "#222a22",
+    bg_alt = "#2c342c",
+    selection = "#384438",
+    search = "#384438",
     search_current = "#80c080",
     search_inc = "#d8c070",
-    float_bg = "#1a281a",
+    float_bg = "#343e34",
 
     -- Syntax
     comment = "#90c890",
@@ -28,12 +28,12 @@ return {
     info = "#e0e8d8",
 
     -- Virtual text
-    virtual_text = "#708068",
+    virtual_text = "#98a890",
 
     -- Diff/Git
     added = "#90c890",
     changed = "#b0e0b0",
     deleted = "#f0a8a8",
-    selection_added = "#203820",
-    selection_deleted = "#382020",
+    selection_added = "#304828",
+    selection_deleted = "#483028",
 }

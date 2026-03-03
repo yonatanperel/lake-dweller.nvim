@@ -2,7 +2,7 @@ return {
     -- UI
     bg = "#0e0e16",
     fg = "#d8d8d8",
-    fg_dim = "#5a6475",
+    fg_dim = "#707c8c",
     fg_inverse = "#0e0e16",
     bg_alt = "#1a1a24",
     selection = "#33415c",

@@ -2,7 +2,7 @@ return {
     -- UI
     bg = "#0a1520",
     fg = "#f0f4f8",
-    fg_dim = "#6090b0",
+    fg_dim = "#70a0c0",
     fg_inverse = "#0a1520",
     bg_alt = "#152535",
     selection = "#2a5070",
@@ -28,7 +28,7 @@ return {
     info = "#f0f4f8",
 
     -- Virtual text
-    virtual_text = "#6090b0",
+    virtual_text = "#88b0c8",
 
     -- Diff/Git
     added = "#60d8b0",
