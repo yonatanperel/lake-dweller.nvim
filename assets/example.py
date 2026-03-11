@@ -1,3 +1,4 @@
+# Models and services for user management
 from dataclasses import dataclass
 from typing import Optional
 
@@ -23,6 +24,7 @@ class UserService:
         self.cache[email] = user
         return user
 
+# Filter active adult users and return name-age pairs
 def process_users(users: list[User]) -> dict[str, int]:
     results = {}
     for user in users:

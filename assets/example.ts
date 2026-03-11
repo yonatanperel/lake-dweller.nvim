@@ -1,3 +1,4 @@
+// Core user types and authentication service
 interface User {
   id: string;
   name: string;
@@ -23,6 +24,7 @@ class AuthService {
     return this.users.get(email);
   }
 
+  // Check if user has sufficient permissions for the given role
   hasPermission(user: User, role: UserRole): boolean {
     const permissions: Record<UserRole, number> = {
       admin: 100,

@@ -1,3 +1,4 @@
+// Generic container with fixed capacity allocation
 #include <iostream>
 #include <vector>
 #include <memory>

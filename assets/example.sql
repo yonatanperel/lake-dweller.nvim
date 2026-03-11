@@ -1,3 +1,4 @@
+-- User schema, seed data, and common queries
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
@@ -27,6 +28,7 @@ HAVING COUNT(o.id) > 5
 ORDER BY total_spent DESC
 LIMIT 10;
 
+-- Deactivate users with no recent sessions
 UPDATE users
 SET active = FALSE
 WHERE id IN (
