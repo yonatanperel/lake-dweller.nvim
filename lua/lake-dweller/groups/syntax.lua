@@ -81,7 +81,7 @@ return function(t, p, config)
         ["@variable.parameter"] = { fg = t.variable },
         ["@variable.parameter.builtin"] = { fg = t.variable },
         ["@variable.member"] = { fg = t.variable },
-        ["@variable.builtin"] = { fg = t.constant },
+        ["@variable.builtin"] = { fg = t.keyword },
         ["@field"] = { fg = t.variable },
         ["@property"] = { fg = t.variable },
 
