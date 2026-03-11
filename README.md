@@ -94,6 +94,12 @@ require("lualine").setup({
 - [nvim-notify](https://github.com/rcarriga/nvim-notify)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 - [noice.nvim](https://github.com/folke/noice.nvim)
+- [blink.cmp](https://github.com/Saghen/blink.cmp)
+- [lazy.nvim](https://github.com/folke/lazy.nvim)
+- [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [mini.nvim](https://github.com/echasnovski/mini.nvim)
+- [flash.nvim](https://github.com/folke/flash.nvim)
+- [neo-tree.nvim](https://github.com/nvim-neo/neo-tree.nvim)
 
 ## Philosophy
 
