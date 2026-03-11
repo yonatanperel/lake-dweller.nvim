@@ -38,6 +38,10 @@ return function(t, _config)
         DiffDelete = { fg = t.deleted },
         DiffText = { fg = t.keyword, underline = true },
 
+        Added = { fg = t.added },
+        Changed = { fg = t.changed },
+        Removed = { fg = t.deleted },
+
         Underlined = { fg = t.func, underline = true },
         MoreMsg = { fg = t.func },
     }
