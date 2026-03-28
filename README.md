@@ -2,14 +2,12 @@
 
 <p align="center">A minimal dark colorscheme that you can actually read at a glance.</p>
 
-### pond-dweller
-<img src="assets/pond-dweller.png" width="100%">
-
-### lake-dweller
-<img src="assets/lake-dweller.png" width="100%">
-
-### ocean-dweller
-<img src="assets/ocean-dweller.png" width="100%">
+<p align="center"><strong>pond-dweller</strong><br>
+<img src="assets/pond-dweller.png" width="100%"></p>
+<p align="center"><strong>lake-dweller</strong><br>
+<img src="assets/lake-dweller.png" width="100%"></p>
+<p align="center"><strong>ocean-dweller</strong><br>
+<img src="assets/ocean-dweller.png" width="100%"></p>
 
 ## Requirements
 
