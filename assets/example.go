@@ -1,38 +1,43 @@
-// Package config handles application configuration
-package config
+// Package lake implements a concurrent resource pool.
+package lake
 
 import (
-	"encoding/json"
 	"fmt"
-	"os"
-	"time"
+	"log/slog"
+	"strings"
 )
 
-// Config holds the application settings
-type Config struct {
-	Name     string        `json:"name"`
-	Port     int           `json:"port"`
+const MaxRetries = 3
+
+func Acquire(items []Resource, logger *slog.Logger) (*Resource, error) {
+	for _, r := range items {
+		if r.State == "idle" {
+			logger.Info("acquired", "id", r.ID, "state", "active")
+			return &r, nil
+		}
+	}
+	return nil, fmt.Errorf("pool exhausted: %d checked", len(items))
 }
 
-const (
-	DefaultPort    = 8080
-	DefaultTimeout = 30 * time.Second
-)
-
-func Load(path string) (*Config, error) {
-	data, err := os.ReadFile(path)
-	if err != nil {
-		return nil, fmt.Errorf("read config: %w", err)
+func Summary(items []Resource) string {
+	parts := make([]string, 0, len(items))
+	for _, r := range items {
+		parts = append(parts, fmt.Sprintf("%s:%s", r.ID, r.State))
 	}
-
-	cfg := NewDefault()
-	if err := json.Unmarshal(data, cfg); err != nil {
-		return nil, fmt.Errorf("parse config: %w", err)
-	}
-
-	if err := cfg.Validate(); err != nil {
-		return nil, err
-	}
-
-	return cfg, nil
+	return fmt.Sprintf("pool [%s]", strings.Join(parts, ", "))
 }
+
+// Release returns a resource to the pool.
+func Release(r *Resource, logger *slog.Logger) error {
+	if r.State != "active" {
+		return fmt.Errorf("cannot release %s: state is %q", r.ID, r.State)
+	}
+	r.State = "idle"
+	logger.Info("released", "id", r.ID, "prev", "active")
+	return nil
+}
+
+func formatID(prefix string, n int) string {
+	return fmt.Sprintf("%s-%d", prefix, n)
+}
+
