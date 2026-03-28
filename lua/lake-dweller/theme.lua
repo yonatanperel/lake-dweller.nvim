@@ -1,5 +1,6 @@
 return function(config)
-    local t = vim.tbl_deep_extend("force", {}, require("lake-dweller.variants.lake-dweller"))
+    local variant = config.variant or "lake-dweller"
+    local t = vim.tbl_deep_extend("force", {}, require("lake-dweller.variants." .. variant))
 
     if config.transparent then
         t.bg = "NONE"

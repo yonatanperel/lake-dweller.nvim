@@ -1,0 +1,65 @@
+[metadata]
+name = "Ocean Dweller"
+origin_url = "https://github.com/yonatan-perel/lake-dweller.nvim"
+
+[colors]
+foreground = "#e8e8f0"
+background = "#080810"
+
+cursor_bg = "#e8e8f0"
+cursor_fg = "#080810"
+cursor_border = "#e8e8f0"
+
+selection_bg = "#2a3a5c"
+selection_fg = "#e8e8f0"
+
+scrollbar_thumb = "#7a88a0"
+split = "#7a88a0"
+
+ansi = [
+  "#080810",  # 0 black
+  "#ff6070",  # 1 red
+  "#60d890",  # 2 green
+  "#e0b040",  # 3 yellow
+  "#80b0f0",  # 4 blue
+  "#f07098",  # 5 magenta
+  "#40c8c8",  # 6 cyan
+  "#e8e8f0",  # 7 white
+]
+
+brights = [
+  "#7a88a0",  # 8 bright black
+  "#ff6070",  # 9 bright red
+  "#60d890",  # 10 bright green
+  "#e0b040",  # 11 bright yellow
+  "#80b0f0",  # 12 bright blue
+  "#f07098",  # 13 bright magenta
+  "#40c8c8",  # 14 bright cyan
+  "#e8e8f0",  # 15 bright white
+]
+
+[colors.tab_bar]
+background = "#12121e"
+
+[colors.tab_bar.active_tab]
+bg_color = "#1a1a2a"
+fg_color = "#e8e8f0"
+intensity = "Bold"
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#12121e"
+fg_color = "#7a88a0"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#12121e"
+fg_color = "#e8e8f0"
+italic = true
+
+[colors.tab_bar.new_tab]
+bg_color = "#12121e"
+fg_color = "#7a88a0"
+
+[colors.tab_bar.new_tab_hover]
+bg_color = "#12121e"
+fg_color = "#e8e8f0"
+italic = true

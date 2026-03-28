@@ -1,6 +1,7 @@
 local config = require("lake-dweller").config
 local t = require("lake-dweller.theme")(config)
-local palette = require("lake-dweller.variants.lake-dweller")
+local variant = config.variant or "lake-dweller"
+local palette = require("lake-dweller.variants." .. variant)
 local bg = palette.float_bg
 
 return {

@@ -2,20 +2,15 @@
 
 <p align="center">A minimal dark colorscheme that you can actually read at a glance.</p>
 
-<table>
-  <tr>
-    <td align="center"><img src="assets/go.png" width="100%"><br><sub>Go</sub></td>
-    <td align="center"><img src="assets/rust.png" width="100%"><br><sub>Rust</sub></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="assets/typescript.png" width="100%"><br><sub>TypeScript</sub></td>
-    <td align="center"><img src="assets/python.png" width="100%"><br><sub>Python</sub></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="assets/cpp.png" width="100%"><br><sub>C++</sub></td>
-    <td align="center"><img src="assets/sql.png" width="100%"><br><sub>SQL</sub></td>
-  </tr>
-</table>
+<p align="center">
+  <img src="assets/preview.png" width="100%">
+</p>
+
+## Variants
+
+- **lake-dweller** — the original, balanced and muted
+- **pond-dweller** — softer, pastel tones
+- **ocean-dweller** — higher contrast, sharper colors
 
 ## Requirements
 
@@ -34,7 +29,7 @@
     priority = 1000,
     config = function()
         require("lake-dweller").setup({
-            -- your options here
+            variant = "lake-dweller", -- "lake-dweller", "pond-dweller", or "ocean-dweller"
         })
         vim.cmd.colorscheme("lake-dweller")
     end,
@@ -45,6 +40,7 @@
 
 ```lua
 require("lake-dweller").setup({
+    variant = "lake-dweller",  -- "lake-dweller", "pond-dweller", or "ocean-dweller"
     transparent = false,       -- enable transparent background
     italics = true,            -- enable italic text
     float_background = false,  -- distinct background for floating windows
@@ -55,7 +51,7 @@ require("lake-dweller").setup({
 
 Additional theme files for other applications are in the `extras/` directory:
 
-- **WezTerm**: `extras/wezterm/lake-dweller.toml`
+- **WezTerm**: `extras/wezterm/lake-dweller.toml`, `pond-dweller.toml`, `ocean-dweller.toml`
 
 ### Lualine
 
@@ -69,6 +65,9 @@ require("lualine").setup({
 
 ## Color Palette
 
+<details>
+<summary><strong>lake-dweller</strong></summary>
+
 | Color | Hex | Usage |
 |-------|-----|-------|
 | ![#0e0e16](https://placehold.co/15x15/0e0e16/0e0e16.png) Dark Navy | `#0e0e16` | Background |
@@ -79,6 +78,40 @@ require("lualine").setup({
 | ![#70a8a8](https://placehold.co/15x15/70a8a8/70a8a8.png) Muted Cyan | `#70a8a8` | Types |
 | ![#d58ca6](https://placehold.co/15x15/d58ca6/d58ca6.png) Rosy Pink | `#d58ca6` | Strings |
 | ![#ef8a90](https://placehold.co/15x15/ef8a90/ef8a90.png) Bright Red | `#ef8a90` | Constants, errors |
+
+</details>
+
+<details>
+<summary><strong>pond-dweller</strong></summary>
+
+| Color | Hex | Usage |
+|-------|-----|-------|
+| ![#1a1826](https://placehold.co/15x15/1a1826/1a1826.png) Dusk Purple | `#1a1826` | Background |
+| ![#e0dce8](https://placehold.co/15x15/e0dce8/e0dce8.png) Soft Lavender | `#e0dce8` | Base text |
+| ![#a8d4b0](https://placehold.co/15x15/a8d4b0/a8d4b0.png) Pastel Mint | `#a8d4b0` | Comments |
+| ![#b0a8c0](https://placehold.co/15x15/b0a8c0/b0a8c0.png) Faded Lilac | `#b0a8c0` | Keywords |
+| ![#c4d0ee](https://placehold.co/15x15/c4d0ee/c4d0ee.png) Light Periwinkle | `#c4d0ee` | Functions |
+| ![#98c8c8](https://placehold.co/15x15/98c8c8/98c8c8.png) Soft Teal | `#98c8c8` | Types |
+| ![#e8b0c4](https://placehold.co/15x15/e8b0c4/e8b0c4.png) Blush Pink | `#e8b0c4` | Strings |
+| ![#f0a8b0](https://placehold.co/15x15/f0a8b0/f0a8b0.png) Soft Coral | `#f0a8b0` | Constants, errors |
+
+</details>
+
+<details>
+<summary><strong>ocean-dweller</strong></summary>
+
+| Color | Hex | Usage |
+|-------|-----|-------|
+| ![#080810](https://placehold.co/15x15/080810/080810.png) Deep Abyss | `#080810` | Background |
+| ![#e8e8f0](https://placehold.co/15x15/e8e8f0/e8e8f0.png) Crisp White | `#e8e8f0` | Base text |
+| ![#60d890](https://placehold.co/15x15/60d890/60d890.png) Vivid Green | `#60d890` | Comments |
+| ![#90a0b8](https://placehold.co/15x15/90a0b8/90a0b8.png) Steel Blue | `#90a0b8` | Keywords |
+| ![#80b0f0](https://placehold.co/15x15/80b0f0/80b0f0.png) Electric Blue | `#80b0f0` | Functions |
+| ![#40c8c8](https://placehold.co/15x15/40c8c8/40c8c8.png) Bright Cyan | `#40c8c8` | Types |
+| ![#f07098](https://placehold.co/15x15/f07098/f07098.png) Hot Pink | `#f07098` | Strings |
+| ![#ff6070](https://placehold.co/15x15/ff6070/ff6070.png) Vivid Red | `#ff6070` | Constants, errors |
+
+</details>
 
 ## Supported Plugins
 
