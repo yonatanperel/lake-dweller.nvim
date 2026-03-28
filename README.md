@@ -3,14 +3,19 @@
 <p align="center">A minimal dark colorscheme that you can actually read at a glance.</p>
 
 <p align="center">
-  <img src="assets/preview.png" width="100%">
+  <img src="assets/lake-dweller.png" width="100%">
+  <sub><strong>lake-dweller</strong></sub>
 </p>
 
-## Variants
+<p align="center">
+  <img src="assets/pond-dweller.png" width="100%">
+  <sub><strong>pond-dweller</strong></sub>
+</p>
 
-- **lake-dweller** — the original, balanced and muted
-- **pond-dweller** — softer, pastel tones
-- **ocean-dweller** — higher contrast, sharper colors
+<p align="center">
+  <img src="assets/ocean-dweller.png" width="100%">
+  <sub><strong>ocean-dweller</strong></sub>
+</p>
 
 ## Requirements
 
