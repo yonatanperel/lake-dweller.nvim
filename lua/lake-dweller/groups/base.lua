@@ -33,14 +33,14 @@ return function(t, _config)
         Directory = { fg = t.type, bg = t.bg, bold = true },
         Special = { fg = t.keyword },
 
-        DiffAdd = { fg = t.added },
-        DiffChange = { fg = t.changed },
-        DiffDelete = { fg = t.deleted },
-        DiffText = { fg = t.keyword, underline = true },
+        DiffAdd = { bg = t.selection_added },
+        DiffChange = { bg = t.selection },
+        DiffDelete = { bg = t.selection_deleted },
+        DiffText = { bg = t.selection, underline = true },
 
-        Added = { fg = t.added },
-        Changed = { fg = t.changed },
-        Removed = { fg = t.deleted },
+        Added = { bg = t.selection_added },
+        Changed = { bg = t.selection },
+        Removed = { bg = t.selection_deleted },
 
         Underlined = { fg = t.func, underline = true },
         MoreMsg = { fg = t.func },
