@@ -22,7 +22,7 @@
 
 ```lua
 {
-    "yonatan-perel/lake-dweller.nvim",
+    "yonatanperel/lake-dweller.nvim",
     lazy = false,
     priority = 1000,
     config = function()
