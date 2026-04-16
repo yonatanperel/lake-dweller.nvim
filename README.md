@@ -4,7 +4,7 @@
 
 <p align="center">
   <img src="assets/all-variants.png" width="100%">
-  <sub><strong>pond-dweller</strong> · <strong>lake-dweller</strong> · <strong>ocean-dweller</strong></sub>
+  <sub><strong>ocean-dweller</strong> · <strong>lake-dweller</strong> · <strong>pond-dweller</strong></sub>
 </p>
 
 ## Requirements
