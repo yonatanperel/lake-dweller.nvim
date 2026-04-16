@@ -50,6 +50,7 @@ require("lake-dweller").setup({
 Additional theme files for other applications are in the `extras/` directory:
 
 - **WezTerm**: `extras/wezterm/lake-dweller.toml`, `pond-dweller.toml`, `ocean-dweller.toml`
+- **Ghostty**: `extras/ghostty/lake-dweller`, `pond-dweller`, `ocean-dweller`
 
 ### Lualine
 
